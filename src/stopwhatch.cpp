@@ -3,7 +3,7 @@
 
 #include <QKeyEvent>
 
-StopWhatch::StopWhatch(QWidget* parent) : QWidget(parent), ui(new Ui::StopWhatch)
+StopWhatch::StopWhatch(QWidget* parent) : QMainWindow(parent), ui(new Ui::StopWhatch)
 {
   ui->setupUi(this);
 }

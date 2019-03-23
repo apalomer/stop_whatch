@@ -17,7 +17,7 @@ LogosDisplay::LogosDisplay(QWidget *parent) : QWidget(parent)
 
   QTimer *timer = new QTimer(this);
   connect(timer, &QTimer::timeout, this, QOverload<>::of(&LogosDisplay::update));
-  timer->start(50);
+  timer->start(10);
 }
 
 void LogosDisplay::addLogo()

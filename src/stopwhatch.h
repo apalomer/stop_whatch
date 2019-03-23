@@ -1,14 +1,14 @@
 #ifndef STOPWHATCH_H
 #define STOPWHATCH_H
 
-#include <QWidget>
+#include <QMainWindow>
 
 namespace Ui
 {
 class StopWhatch;
 }
 
-class StopWhatch : public QWidget
+class StopWhatch : public QMainWindow
 {
   Q_OBJECT
 
