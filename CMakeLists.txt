@@ -1,7 +1,9 @@
 # Set up cmake
 cmake_minimum_required (VERSION 3.0)
 project (stop_watch CXX C)
-add_compile_options(-std=c++11 -Wall -Wextra)
+if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
+  add_compile_options(-std=c++11 -Wall -Wextra)
+endif()
 
 # Find includes in corresponding build directories
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
